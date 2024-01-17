@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+        <title>Расчет стоимости сайта</title>
+    </head>
+<body>
+    <div class="wrapper-page">
+        <header class="header calc-header">
+            <div class="container">
+                <div class="header__body">
+                    <a href="" class="header__logo">
+                        <img src="./img/logo.svg" alt="">
+                        <p>Web Studio</p>
+                    </a>
+                    <div class="header__number">
+                        <img src="./img/header-call.svg" alt="" class="header__link-call">
+                        <a href="tel:+37369910767" class="header__link-number">+373-69910767</a>
+                    </div>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li>
+                                <a href="" class="header__link">Услуги</a>
+                            </li>
+                            <li>
+                                <a href="" class="header__link">Цены</a>
+                            </li>
+                            <li>
+                                <a href="" class="header__link">Портфолио</a>
+                            </li>
+                            <li>
+                                <a href="" class="header__link">Контакты</a>
+                            </li>
+                            <li class="none">
+                                <img src="./img/header-call.svg" alt="" class="header__link-call">
+                                <a href="tel:+37369910767" class="header__link-number">+373-69910767</a>
+                            </li>
+                            <li>
+                                <a class="header__link underline" id="popup-btn">Заказать звонок</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="thankyou-popup">
+                <div class="popup-content thankyou">
+                    <p class="popup-text-thankyou">Спасибо, данные успешно отправлены, наш менеджер свяжется с Вами в течении 30 минут</p>
+                </div>
+            </div>
+            <div class="calc__price">
+                <div class="container">
+                    <h1 class="title">Расчет стоимости <span>сайта</span></h1>
+                    <div class="wrapper-calc">
+                        <div class="calc-card">
+                            <p class="calc__price--text">Впишите свой телефон, на который можно отправить информацию по whatsapp/viber/смс и нажмите на красную кнопку</p>
+                            <form action="#" class="about-calc">
+                                <input type="tel" placeholder="Введите номер телефона" class="calc-input" value="+373-" required>
+                                <button type="submit" class="about-calc--btn">получить расчет</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__body">
+                        <a href="" class="footer__logo">
+                            <h1><span>An</span> Design</h1>
+                            <p>Web Studio</p>
+                        </a>
+                        <nav class="footer__menu">
+                            <ul class="footer__list">
+                                <li>
+                                    <a href="" class="footer_link">Услуги</a>
+                                </li>
+                                <li>
+                                    <a href="" class="footer_link">Цены</a>
+                                </li>
+                                <li>
+                                    <a href="" class="footer_link">Портфолио</a>
+                                </li>
+                                <li>
+                                    <a href="" class="footer_link">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="footer__social">
+                            <a href=""><img src="./img/instagram.svg" alt=""></a>
+                            <a href=""><img src="./img/facebook.svg" alt=""></a>
+                            <a href=""><img src="./img/telegram.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="signature">
+                        <p>©2020 AnDesign  Создание сайтов для бизнеса</p>
+                        <p>©2020 AnDesign</p>
+                        <p>Создание сайтов для бизнеса</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/calc.js"></script>
+</body>
+</html>

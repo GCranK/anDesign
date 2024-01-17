@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+        <title>Расчет стоимости сайта</title>
+    </head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__body">
+                <a href="" class="header__logo">
+                    <img src="./img/logo.svg" alt="">
+                    <p>Web Studio</p>
+                </a>
+                <div class="header__number">
+                    <img src="./img/header-call.svg" alt="" class="header__link-call">
+                    <a href="tel:+37369910767" class="header__link-number">+373-69910767</a>
+                </div>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li>
+                            <a href="" class="header__link">Услуги</a>
+                        </li>
+                        <li>
+                            <a href="" class="header__link">Цены</a>
+                        </li>
+                        <li>
+                            <a href="" class="header__link">Портфолио</a>
+                        </li>
+                        <li>
+                            <a href="" class="header__link">Контакты</a>
+                        </li>
+                        <li class="none">
+                            <img src="./img/header-call.svg" alt="" class="header__link-call">
+                            <a href="tel:+37369910767" class="header__link-number">+373-69910767</a>
+                        </li>
+                        <li>
+                            <a class="header__link underline" id="popup-btn">Заказать звонок</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id="thankyou-popup">
+        <div class="popup-content thankyou">
+            <p class="popup-text-thankyou">Спасибо, данные успешно отправлены, наш менеджер свяжется с Вами в течении 30 минут</p>
+        </div>
+    </div>
+<div class="calculation">
+    <div class="container">
+        <div class="calculation__wrapper">
+            <h1 class="title">Расчет стоимости <span>сайта</span></h1>
+            <p class="survey">Ответьте на 3 коротких вопроса за <span>20 секунд</span> и получите предварительный расчет стоимости разработки сайта.</p>
+            <p class="discount">А также <span>скидку 10%</span> на будущую разработку.</p>
+            <div class="calculation__card--one">
+                <div class="calculation__check">
+                    <button id="prev-btn" class="prev-one"></button>
+                    <span class="counter">01/03</span>
+                    <button id="calc-btn" type="submit" class="next-btn"></button>
+                </div>
+                <div class="calculation__card-title">
+                    <h2>Зачем Вам нужен сайт?</h2>
+                </div>
+                <div class="calculation__checkbox-wrapper one-card">
+                    <div class="calculation__row">
+                        <div class="calculation-checkbox">
+                            <label for="promotion" class="checkbox-label">
+                                <input type="checkbox" id="promotion" class="checkbox-input">
+                                <span class="check-style"></span>
+                                <p id="label-text">Продвижение какого-либо продукта или бренда</p> 
+                            </label>
+                        </div>
+                        <div class="calculation-checkbox">
+                            <label for="interaction" class="checkbox-label">
+                                <input type="checkbox" id="interaction" class="checkbox-input" checked>
+                                <span class="check-style"></span>
+                                <p id="label-text">Взаимодействие с людьми (посетители, клиенты, партнеры)</p> 
+                            </label>
+                        </div>
+                        <div class="calculation-checkbox">
+                            <label for="creating-image" class="checkbox-label">
+                                <input type="checkbox" id="creating-image" class="checkbox-input">
+                                <span class="check-style"></span>
+                                <p id="label-text">Создание благоприятного имиджа компании</p> 
+                            </label>
+                        </div>
+                    </div>
+                    <div class="calculation__row">
+                        <div class="calculation-checkbox">
+                            <label for="sales" class="checkbox-label">
+                                <input type="checkbox" id="sales" class="checkbox-input">
+                                <span class="check-style"></span>
+                                <p id="label-text">Прямые продажи в сети</p> 
+                            </label>
+                        </div>
+                        <div class="calculation-checkbox">
+                            <label for="advertising" class="checkbox-label">
+                                <input type="checkbox" id="advertising" class="checkbox-input">
+                                <span class="check-style"></span>
+                                <p id="label-text">Реклама товара или услуги</p> 
+                            </label>
+                        </div>
+                        <div class="calculation-checkbox">
+                            <label for="service-creation" class="checkbox-label">
+                                <input type="checkbox" id="service-creation" class="checkbox-input">
+                                <span class="check-style"></span>
+                                <p id="label-text">Создание какого-либо сервиса в сети</p> 
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculation__cards-button">
+                    <button type="submit" id="btn-card">Далее <svg width="13.55px" height="15" viewBox="0 0 31 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M-0.000590801 11.6279L29.8711 11.6279M29.8711 11.6279L19.499 22M29.8711 11.6279L19.499 1.25577" stroke="white" stroke-width="4"/></svg></button>
+                </div>
+            </div>
+            <div class="calculation__card--two">
+                <div class="calculation__check">
+                    <button id="prev-btn--two" class="prev-two"></button>
+                    <span class="counter">02/03</span>
+                    <button id="calc-btn" type="submit" class="next-btn"></button>
+                </div>
+                <div class="calculation__card-title">
+                    <h2>Какая информация должна быть на сайте?</h2>
+                </div>
+                <div class="calculation__checkbox-wrapper two-card">
+                    <div class="calculation__row">
+                        <div class="calculation-checkbox">
+                            <label for="info-services" class="checkbox-label">
+                                <input type="checkbox" id="info-services" class="checkbox-input">
+                                <span class="check-style"></span>
+                                <p id="label-text">Информация об услугах компании</p> 
+                            </label>
+                        </div>
+                        <div class="calculation-checkbox">
+                            <label for="card-product" class="checkbox-label">
+                                <input type="checkbox" id="card-product" class="checkbox-input">
+                                <span class="check-style"></span>
+                                <p id="label-text">Карточки товара</p> 
+                            </label>
+                        </div>
+                        <div class="calculation-checkbox">
+                            <label for="reverse-form" class="checkbox-label">
+                                <input type="checkbox" id="reverse-form" class="checkbox-input" checked>
+                                <span class="check-style"></span>
+                                <p id="label-text">Форма обратной связи</p> 
+                            </label>
+                        </div>
+                        <div class="calculation-checkbox">
+                            <label for="our-team" class="checkbox-label">
+                                <input type="checkbox" id="our-team" class="checkbox-input">
+                                <span class="check-style"></span>
+                                <p id="label-text">Наша команда</p> 
+                            </label>
+                        </div>
+                    </div>
+                    <div class="calculation__row">
+                        <div class="calculation-checkbox">
+                            <label for="info-contact" class="checkbox-label">
+                                <input type="checkbox" id="info-contact" class="checkbox-input">
+                                <span class="check-style"></span>
+                                <p id="label-text">Информация о компании и контакты</p> 
+                            </label>
+                        </div>
+                        <div class="calculation-checkbox">
+                            <label for="news" class="checkbox-label">
+                                <input type="checkbox" id="news" class="checkbox-input">
+                                <span class="check-style"></span>
+                                <p id="label-text">Новости компании</p> 
+                            </label>
+                        </div>
+                        <div class="calculation-checkbox">
+                            <label for="price-list" class="checkbox-label">
+                                <input type="checkbox" id="price-list" class="checkbox-input">
+                                <span class="check-style"></span>
+                                <p id="label-text">Прайс-лист</p> 
+                            </label>
+                        </div>
+                        <div class="calculation-checkbox">
+                            <label for="other" class="checkbox-label">
+                                <input type="checkbox" id="other" class="checkbox-input">
+                                <span class="check-style"></span>
+                                <p id="label-text">Другое</p> 
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculation__cards-button">
+                    <button type="submit" id="btn-card--two">Далее <svg width="13.55px" height="15" viewBox="0 0 31 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M-0.000590801 11.6279L29.8711 11.6279M29.8711 11.6279L19.499 22M29.8711 11.6279L19.499 1.25577" stroke="white" stroke-width="4"/></svg></button>
+                </div>
+            </div>
+            <div class="calculation__card--three">
+                <div class="calculation__check">
+                    <button id="prev-btn-three" class="prev-three"></button>
+                    <span class="counter">03/03</span>
+                    <button id="calc-btn--three" type="submit" class="next-btn"></button>
+                </div>
+                <div class="calculation__card-title">
+                    <h2>Какие действия должен совершить посетитель на сайте?</h2>
+                </div>
+                <div class="calculation__checkbox-wrapper three-card">
+                    <div class="calculation__row">
+                        <div class="calculation-checkbox">
+                            <label for="message" class="checkbox-label">
+                                <input type="checkbox" id="message" class="checkbox-input">
+                                <span class="check-style"></span>
+                                <p id="label-text">Пользователь должен написать Вам сообщение </p> 
+                            </label>
+                        </div>
+                        <div class="calculation-checkbox">
+                            <label for="order-shop" class="checkbox-label">
+                                <input type="checkbox" id="order-shop" class="checkbox-input" checked>
+                                <span class="check-style"></span>
+                                <p id="label-text">Заказать товар в магазине</p> 
+                            </label>
+                        </div>
+                    </div>
+                    <div class="calculation__row">
+                        <div class="calculation-checkbox">
+                            <label for="request-call" class="checkbox-label">
+                                <input type="checkbox" id="request-call" class="checkbox-input">
+                                <span class="check-style"></span>
+                                <p id="label-text">Заказать звонок с сайта</p> 
+                            </label>
+                        </div>
+                        <div class="calculation-checkbox">
+                            <label for="application" class="checkbox-label">
+                                <input type="checkbox" id="application" class="checkbox-input">
+                                <span class="check-style"></span>
+                                <p id="label-text">Оставить заявку через форму обратной связи</p> 
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculation__cards-button">
+                    <button type="submit" id="btn-card--three">Далее <svg width="13.55px" height="15" viewBox="0 0 31 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M-0.000590801 11.6279L29.8711 11.6279M29.8711 11.6279L19.499 22M29.8711 11.6279L19.499 1.25577" stroke="white" stroke-width="4"/></svg></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__body">
+                    <a href="" class="footer__logo">
+                        <h1><span>An</span> Design</h1>
+                        <p>Web Studio</p>
+                    </a>
+                    <nav class="footer__menu">
+                        <ul class="footer__list">
+                            <li>
+                                <a href="" class="footer_link">Услуги</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer_link">Цены</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer_link">Портфолио</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer_link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer__social">
+                        <a href=""><img src="./img/instagram.svg" alt=""></a>
+                        <a href=""><img src="./img/facebook.svg" alt=""></a>
+                        <a href=""><img src="./img/telegram.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="signature">
+                    <p>©2020 AnDesign  Создание сайтов для бизнеса</p>
+                    <p>©2020 AnDesign</p>
+                    <p>Создание сайтов для бизнеса</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/price.js"></script>
+</body>
+</html>

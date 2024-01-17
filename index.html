@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <title>AnDesign</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__body">
+                <a href="" class="header__logo">
+                    <img src="./img/logo.svg" alt="">
+                    <p>Web Studio</p>
+                </a>
+                <div class="header__number">
+                    <img src="./img/header-call.svg" alt="" class="header__link-call">
+                    <a href="tel:+37369910767" class="header__link-number">+373-69910767</a>
+                </div>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li>
+                            <a href="" class="header__link">Услуги</a>
+                        </li>
+                        <li>
+                            <a href="" class="header__link">Цены</a>
+                        </li>
+                        <li>
+                            <a href="" class="header__link">Портфолио</a>
+                        </li>
+                        <li>
+                            <a href="" class="header__link">Контакты</a>
+                        </li>
+                        <li class="none">
+                            <img src="./img/header-call.svg" alt="" class="header__link-call">
+                            <a href="tel:+37369910767" class="header__link-number">+373-69910767</a>
+                        </li>
+                        <li>
+                            <a class="header__link underline" id="popup-btn">Заказать звонок</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id="popup">
+        <div class="popup-content">
+            <h2 class="popup-title">Заказать звонок</h2>
+            <p class="popup-text">Оставьте номер телефона и я перезвоню Вам <span id="span-text">в течении 30 минут</span> и подробно <span id="span-text">отвечу</span> на все вопросы по созданию сайта</p>
+            <form action="#" class="popup-form">
+                <input type="tel" placeholder="Введите номер телефона" class="popup-input" value="+373-" required>
+                <button type="submit" class="popup-btn">Заказать звонок</button>
+            </form>
+        </div>
+    </div>
+    <div id="thankyou-popup">
+        <div class="popup-content thankyou">
+            <p class="popup-text-thankyou">Спасибо, данные успешно отправлены, наш менеджер свяжется с Вами в течении 30 минут</p>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="container">
+            <div class="hero__wrapper wrapper">
+                <div class="hero__title">
+                    <h1>Разработка <span>Сайтов</span> для бизнеса</h1>
+                    <p class="desktop-active">Проектирование, разработка, тестирование и поддержка интернет-магазинов, веб-сервисов, приложений, продающих и корпоративных сайтов</p>
+                    <p class="mobile-active">Проектирование, разработка, тестирование и поддержка интернет-магазинов, веб-сервисов, продающих и корпоративных сайтов</p>
+                    <button id="price-btn">Расcчитать  Стоимость</button>
+                </div>
+                <div class="hero__image">
+                    <img src="./img/mask-photo.svg" alt="" class="mask-desktop">
+                    <img src="./img/mask-photo1.svg" alt="" class="mask-mobile">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cards">
+        <div class="cards__container">
+            <div class="cards__wrapper wrapper">
+                <div class="cards__block">
+                    <div class="cards__info">
+                        <h1>Интернет магазины</h1>
+                        <p>Позволяют увеличить число покупателей, предложив им возможность дистанционного заказа и доставки товаров по месту назначения.</p>
+                        <button onclick="document.location='/shop.html'" class="cards__btn" id="shop">Подробнее</button>
+                    </div>
+                </div>
+                <div class="cards__block">
+                    <div class="cards__info">
+                        <h1>Сайты компаний</h1>
+                        <p>Представляют компанию в сети интернет, формируют имидж среди потенциальных партнеров, знакомят с услугами  и товарами компании.</p>
+                        <button onclick="document.location='/page-company.html'" class="cards__btn" id="pages-company">Подробнее</button>
+                    </div>
+                </div>
+                <div class="cards__block">
+                    <div class="cards__info">
+                        <h1>Landing Page</h1>
+                        <p id="last">Разарабатывается для продажи какой-либо одной услуги или небольшого количества товаров для целевой аудитории.</p>
+                        <button onclick="document.location='/landing.html'" class="cards__btn" id="landing-page">Подробнее</button>
+                    </div>
+                </div>
+                <div class="cards__block card-image">
+                    <div class="cards__info">
+                        <img src="./img/cards-photo png.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="advantage">
+        <div class="container">
+            <div class="advantage__wrapper wrapper">
+                <div class="advantage__info">
+                    <h1>Грамотно разработанный <span>сайт</span></h1>
+                    <div class="advantage__cards">
+                        <div class="advantage__card card-one">
+                            <div class="advantage__title">
+                                <h2>Увеличит Продажи</h2>
+                                <img src="./img/icon1.svg" alt="">
+                            </div>
+                            <p>В интернет-магазине количество потенциальных клиентов намного больше, чем в оффлайне</p>
+                        </div>
+                        <div class="advantage__card card-two">
+                            <div class="advantage__title">
+                                <h2>Поднимет Имидж</h2>
+                                <img src="./img/icon2.svg" alt="">
+                            </div>
+                            <p>Сайт формирует лицо компании, узнаваемость бренда, содает положительное восприятие продуктов компании у потребителя</p>
+                        </div>
+                        <div class="advantage__card card-three">
+                            <div class="advantage__title">
+                                <h2>Повысит Лояльность </h2>
+                                <img src="./img/icon3.svg" alt="">
+                            </div>
+                            <p>Сайт упрощает коммуникацию с клиентами. Позволяет понять, что им интересно и важно.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="advantage__guar">
+                    <h1>Мы гарантируем</h1>
+                    <div class="advantage__row">
+                        <div class="advantage__row-title">
+                            <h3 id="one">01</h3><span>Фиксированную цену</span>
+                        </div>
+                        <div class="advantage__row-text">
+                            <p class="one">Цена за проект не изменится в процессе разработки.</p>
+                        </div>
+                    </div>
+                    <div class="advantage__row">
+                        <div class="advantage__row-title">
+                            <h3 id="two">02</h3><span>Соблюдение сроков</span>
+                        </div>
+                        <div class="advantage__row-text">
+                            <p class="two">Проект всегда будет реализован в оговоренные сроки.</p>
+                        </div>
+                    </div>
+                    <div class="advantage__row">
+                        <div class="advantage__row-title">
+                            <h3 id="three">03</h3><span>Высокое качество</span>
+                        </div>
+                        <div class="advantage__row-text">
+                            <p class="three">Мы гарантируем, что Ваш сайт будет уникальным и будет соответствовать всем требованиям качественной разработки.</p>
+                        </div>
+                    </div>
+                    <div class="advantage__button"><button id="advanage-btn" type="submit">Узнать Стоимость разработки сайта</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="price">
+        <div class="price__container">
+            <div class="price__wrapper wrapper">
+                <div class="price__calculation">
+                    <div class="price__calculation-wrapper">
+                        <h1>Узнайте предварительную <span>цену</span> на разработку сайта</h1>
+                        <p>Ответьте на 3 коротких вопроса за 20 секунд и получите предварительный расчет стоимости разработки сайта. А также <span>скидку 10%</span> на будущую разработку.</p>
+                        <button type="submit" id="price-calculation">РАСЧЕТ СТОИМОСТИ</button>
+                    </div>
+                </div>
+                <div class="price__image">
+                    <img src="./img/image.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio">
+        <div class="container">
+            <div class="portfolio__wrapper">
+                <div class="portfolio__info">
+                    <h1>Портфолио <span>проектов</span></h1>
+                    <div class="portfolio__cards">
+                        <div class="portfolio__card card-hover">
+                            <div class="card-text">
+                                <img src="./img/Logo-portfolio.svg" alt="">
+                                <span>Termo Inox Grup</span>
+                                <p>Корпоративный сайт для промышленной компании, которая занимается производством емкостей для пищевой промышленности</p>
+                            </div>
+                            <img src="./img/card1.svg" alt="">
+                        </div>
+                        <div class="portfolio__card">
+                            <div class="card-text">
+                                <img src="./img/Logo-portfolio.svg" alt="">
+                                <span>Termo Inox Grup</span>
+                                <p>Корпоративный сайт для промышленной компании, которая занимается производством емкостей для пищевой промышленности</p>
+                            </div>
+                            <img src="./img/card2.svg" alt="">
+                        </div>
+                    </div>
+                        <div class="portfolio__cards">
+                            <div class="portfolio__card">
+                                <div class="card-text">
+                                    <img src="./img/Logo-portfolio.svg" alt="">
+                                    <span>Termo Inox Grup</span>
+                                    <p>Корпоративный сайт для промышленной компании, которая занимается производством емкостей для пищевой промышленности</p>
+                                </div>
+                                <img src="./img/card3.svg" alt="">
+                            </div>
+                            <div class="portfolio__card">
+                                <div class="card-text">
+                                    <img src="./img/Logo-portfolio.svg" alt="">
+                                    <span>Termo Inox Grup</span>
+                                    <p>Корпоративный сайт для промышленной компании, которая занимается производством емкостей для пищевой промышленности</p>
+                                </div>
+                                <img src="./img/card4.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__button">
+                        <button id="portfolio-btn" type="submit">Посмотреть еще</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="progress">
+            <div class="container">
+                <div class="progress__swapper swapper">
+                    <div class="progress__content">
+                        <h1><span>Ход работ</span> по проекту</h1>
+                        <div class="progress__cards">
+                            <div class="progress__card">
+                                <div class="progress__card-title">
+                                    <h1>01</h1>
+                                    <span>Анализируем будущий проект</span>
+                                </div>
+                                <div class="progress__card-image">
+                                    <img src="./img/mask1.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="progress__card">
+                                <div class="progress__card-title">
+                                    <h1>02</h1>
+                                    <span>Пишем техническое задание</span>
+                                </div>
+                                <div class="progress__card-image">
+                                    <img src="./img/mask2.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress__cards">
+                            <div class="progress__card">
+                                <div class="progress__card-title">
+                                    <h1>03</h1>
+                                    <span>Создаем прототип</span>
+                                </div>
+                                <div class="progress__card-image">
+                                    <img src="./img/mask3.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="progress__card">
+                                <div class="progress__card-title">
+                                    <h1>04</h1>
+                                    <span>Разрабатываем дизайн</span>
+                                </div>
+                                <div class="progress__card-image">
+                                    <img src="./img/mask4.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress__cards">
+                            <div class="progress__card">
+                                <div class="progress__card-title">
+                                    <h1>05</h1>
+                                    <span>Адаптивная верстка</span>
+                                </div>
+                                <div class="progress__card-image">
+                                    <img src="./img/mask5.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="progress__card">
+                                <div class="progress__card-title">
+                                    <h1>06</h1>
+                                    <span>Программная настройка</span>
+                                </div>
+                                <div class="progress__card-image">
+                                    <img src="./img/mask6.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress__cards">
+                            <div class="progress__card">
+                                <div class="progress__card-title">
+                                    <h1>07</h1>
+                                    <span>Наполнение контентом</span>
+                                </div>
+                                <div class="progress__card-image">
+                                    <img src="./img/mask7.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="progress__card">
+                                <div class="progress__card-title">
+                                    <h1>08</h1>
+                                    <span>Тестирование и запуск</span>
+                                </div>
+                                <div class="progress__card-image">
+                                    <img src="./img/mask8.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slider main container -->
+                    <div class="swiper swiper-desktop-none">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                        <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="progress__card">
+                                    <div class="progress__card-title">
+                                        <h1>01</h1>
+                                        <span>Анализируем будущий проект</span>
+                                    </div>
+                                    <div class="progress__card-image">
+                                        <img src="./img/mask1.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="progress__card">
+                                    <div class="progress__card-title">
+                                        <h1>02</h1>
+                                        <span>Пишем техническое задание</span>
+                                    </div>
+                                    <div class="progress__card-image">
+                                        <img src="./img/mask2.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="progress__card">
+                                    <div class="progress__card-title">
+                                        <h1>03</h1>
+                                        <span>Создаем прототип</span>
+                                    </div>
+                                    <div class="progress__card-image">
+                                        <img src="./img/mask3.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="progress__card">
+                                    <div class="progress__card-title">
+                                        <h1>04</h1>
+                                        <span>Разрабатываем дизайн</span>
+                                    </div>
+                                    <div class="progress__card-image">
+                                        <img src="./img/mask4.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="progress__card">
+                                    <div class="progress__card-title">
+                                        <h1>05</h1>
+                                        <span>Адаптивная верстка</span>
+                                    </div>
+                                    <div class="progress__card-image">
+                                        <img src="./img/mask5.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="progress__card">
+                                    <div class="progress__card-title">
+                                        <h1>06</h1>
+                                        <span>Программная настройка</span>
+                                    </div>
+                                    <div class="progress__card-image">
+                                        <img src="./img/mask6.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="progress__card">
+                                    <div class="progress__card-title">
+                                        <h1>07</h1>
+                                        <span>Наполнение контентом</span>
+                                    </div>
+                                    <div class="progress__card-image">
+                                        <img src="./img/mask7.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="progress__card">
+                                    <div class="progress__card-title">
+                                        <h1>08</h1>
+                                        <span>Тестирование и запуск</span>
+                                    </div>
+                                    <div class="progress__card-image">
+                                        <img src="./img/mask8.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-scrollbar swiper-scroll"></div>
+                    </div>
+                    <div class="progress__button">
+                        <button id="progress-btn">Заказать Проект</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="connection">
+            <div class="container">
+                <div class="connection__swapper swapper">
+                    <div class="connection__content">
+                        <h1>Давайте обсудим Ваш <span>проект</span></h1>
+                        <p>Объясните нам свой проект, и мы свяжемся с Вами сразу же как сделаем расчет.</p>
+                        <div class="connection__forms">
+                            <div class="connection__form">
+                                <form action="#" name="connection-info" method="get" class="connection-form">
+                                    <input type="text" name="name" placeholder="Имя" tabindex="1" id="connection-input-name" class="connection-input">
+                                    <input type="tel" name="phone" minlength="6" placeholder="Телефон*" tabindex="2" id="connection-input-tel" class="connection-input" required>
+                                    <input type="email" name="email" placeholder="E-mail" tabindex="3" id="connection-input-email" class="connection-input">
+                            </div>
+                            <div class="connection__form">
+                                    <textarea name="" id="" cols="30" rows="10" tabindex="4" class="textarea" placeholder="Опишите кратко, что Вам нужно"></textarea>
+                                    <input type="submit" value="Отправить сообщение" tabindex="5" id="form-btn">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services">
+            <div class="container">
+                <div class="services__wrapper">
+                    <div class="services__info">
+                        <h1>Дополнительные <span>услуги</span></h1>
+                        <div class="services__content">
+                            <div class="services__marketing wrap">
+                                <div class="services__marketing-image">
+                                    <img src="./img/services1.svg" alt="">
+                                </div>
+                                <div class="services__marketing-info">
+                                    <div class="services__wrapp">
+                                        <h1>Маркетинг и продвижение</h1>
+                                        <ul class="services__list">
+                                            <li class="services__text">Поисковая оптимизация</li>
+                                            <li class="services__text">Уникальный контент</li>
+                                            <li class="services__text">Контекстная  и банерная реклама</li>
+                                            <li class="services__text">Продвижение в соцсетях</li>
+                                        </ul>
+                                        <div class="services__button">
+                                            <button id="promotion-btn" class="services-btn">Заказать продвижение</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__design wrap">
+                                <div class="services__design-image">
+                                    <img src="./img/services2.svg" alt="">
+                                </div>
+                                <div class="services__marketing-info">
+                                    <div class="services__wrapp">
+                                        <h1>Дизайн</h1>
+                                        <ul class="services__list">
+                                            <li class="services__text">Разработка корпоративного стиля</li>
+                                            <li class="services__text">Разработка логотипа</li>
+                                            <li class="services__text">Уникальный дизайн для Вашего сайта</li>
+                                        </ul>
+                                        <div class="services__button">
+                                            <button id="development-btn" class="services-btn">Заказать разработку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__body">
+                        <a href="" class="footer__logo">
+                            <h1><span>An</span> Design</h1>
+                            <p>Web Studio</p>
+                        </a>
+                        <nav class="footer__menu">
+                            <ul class="footer__list">
+                                <li>
+                                    <a href="" class="footer_link">Услуги</a>
+                                </li>
+                                <li>
+                                    <a href="" class="footer_link">Цены</a>
+                                </li>
+                                <li>
+                                    <a href="" class="footer_link">Портфолио</a>
+                                </li>
+                                <li>
+                                    <a href="" class="footer_link">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="footer__social">
+                            <a href=""><img src="./img/instagram.svg" alt=""></a>
+                            <a href=""><img src="./img/facebook.svg" alt=""></a>
+                            <a href=""><img src="./img/telegram.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="signature">
+                        <p>©2020 AnDesign  Создание сайтов для бизнеса</p>
+                        <p>©2020 AnDesign</p>
+                        <p>Создание сайтов для бизнеса</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+<script src="./js/main.js"></script>
+<script src="./js/swiper-main.js"></script>
+</body>
+</html>
